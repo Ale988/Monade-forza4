@@ -2,7 +2,7 @@
   display: grid;
   grid-template-rows: repeat(6, 100px);
   grid-template-columns: repeat(6, 1fr);
-  gap: 4px;
+  gap: 0px;
   font: Helvetica sans-serif;
 }
 .main .casella {
