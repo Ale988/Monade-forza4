@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+</head>
+
+<body>
+    <div id="applicazione_forza4">
+        <div class="main" @click="counter += 1; clicked($event)">
+            <div class="casella s1">
+                <!--<p id="1">
+                    The button above has been clicked {{counter}} times.
+                </p>-->
+            </div>
+            <div class="casella s2">
+                <p id="2"></p>
+            </div>
+            <div class="casella s3">
+                <p id="3"></p>
+            </div>
+            <div class="casella s4">
+                <p id="4"></p>
+            </div>
+            <div class="casella s5">
+                <p id="5"></p>
+            </div>
+            <div class="casella s6">
+                <p id="6"></p>
+            </div>
+            <div class="casella s7">
+                <p id="7"></p>
+            </div>
+            <div class="casella s8">
+                <p id="8"></p>
+            </div>
+            <div class="casella s9">
+                <p id="9"></p>
+            </div>
+            <div class="casella s10">
+                <p id="10"></p>
+            </div>
+            <div class="casella s11">
+                <p id="11"></p>
+            </div>
+            <div class="casella s12">
+                <p id="12"></p>
+            </div>
+            <div class="casella s13">
+                <p id="13"></p>
+            </div>
+            <div class="casella s14">
+                <p id="14"></p>
+            </div>
+            <div class="casella s15">
+                <p id="15"></p>
+            </div>
+            <div class="casella s16">
+                <p id="16"></p>
+            </div>
+            <div class="casella s17">
+                <p id="17"></p>
+            </div>
+            <div class="casella s18">
+                <p id="18"></p>
+            </div>
+            <div class="casella s19">
+                <p id="19"></p>
+            </div>
+            <div class="casella s20">
+                <p id="20"></p>
+            </div>
+            <div class="casella s21">
+                <p id="21"></p>
+            </div>
+            <div class="casella s22">
+                <p id="22"></p>
+            </div>
+            <div class="casella s23">
+                <p id="23"></p>
+            </div>
+            <div class="casella s24">
+                <p id="24"></p>
+            </div>
+            <div class="casella s25">
+                <p id="25"></p>
+            </div>
+            <div class="casella s26">
+                <p id="26"></p>
+            </div>
+            <div class="casella s27">
+                <p id="27"></p>
+            </div>
+            <div class="casella s28">
+                <p id="28"></p>
+            </div>
+            <div class="casella s29">
+                <p id="29"></p>
+            </div>
+            <div class="casella s30">
+                <p id="30"></p>
+            </div>
+            <div class="casella s31">
+                <p id="31"></p>
+            </div>
+            <div class="casella s32">
+                <p id="32"></p>
+            </div>
+            <div class="casella s33">
+                <p id="33"></p>
+            </div>
+            <div class="casella s34">
+                <p id="34"></p>
+            </div>
+            <div class="casella s35">
+                <p id="35"></p>
+            </div>
+            <div class="casella s36">
+                <p id="36"></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    var app = new Vue({
+        el: '#applicazione_forza4',
+        data: {
+            message: 'Ciao da ale',
+            counter: 0,
+            name: "maria",
+        },
+        methods: {
+            clicked: function(event) {
+                let nuovoColore;
+                this.counter % 2 === 0 ? nuovoColore = 'red' : nuovoColore = 'yellow';
+                event.target.style.backgroundColor = nuovoColore;
+            }
+        }
+
+    })
+    app.message = 'You loaded this page on ' + new Date().toLocaleString();
+</script>
+
+</html>
